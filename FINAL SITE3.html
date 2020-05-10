@@ -1,0 +1,805 @@
+<!DOCTYPE html><html lang="" class="sr"><head>
+    <meta charset="UTF-8">
+    <!-- generator meta tag -->
+    <!-- leave this for stats and Silex version check -->
+    <meta name="generator" content="Silex v2.2.10">
+    <!-- End of generator meta tag -->
+    <script type="text/javascript" src="https://editor.silex.me/static/2.10/jquery.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.10/jquery-ui.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.10/pageable.js" data-silex-static=""></script>
+    <script type="text/javascript" src="https://editor.silex.me/static/2.10/front-end.js" data-silex-static=""></script>
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.10/normalize.css" data-silex-static="">
+    <link rel="stylesheet" href="https://editor.silex.me/static/2.10/front-end.css" data-silex-static="">
+
+    <style type="text/css" class="silex-style">body.silex-runtime {scroll-behavior: smooth;}</style>
+    <script type="text/javascript" class="silex-script"></script>
+    <style class="silex-inline-styles" type="text/css">.body-initial {background-color: rgba(253,246,235,1); background-image: url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM0Nzl9);}@media only screen and (max-width: 480px) {.body-initial {}}.silex-id-1491510574619-3 {background-color: transparent; border-color: #000000; min-width: 1000px;}.silex-id-1491510574619-2 {background-color: rgba(253,246,235,1); min-height: 100px; top: 15px; left: 250px;}.silex-id-1552766682348-1 {min-height: 27px; width: 33px; background-color: transparent; top: 8136.36328125px; left: 686px;}@media only screen and (max-width: 480px) {.silex-id-1552766682348-1 {left: -12px; top: 8868px;}}.silex-id-1491512678931-14 {width: 852px; background-color: transparent; min-height: 70px; top: 15px; left: 175px; border-color: #000000;}.silex-id-1491512744410-15 {width: 141px; min-height: 42px; top: 14px; left: 670px; border-width: 1px 1px 1px 1px; border-style: solid; border-color: #a2ac87; background-color: rgba(255,128,0,1);}.silex-id-1491511288894-6 {width: 113px; min-height: 42px; top: 15px; left: 29px; border-color: #000000;}.silex-id-1491511582447-7 {width: 113px; min-height: 42px; top: 15px; left: 181px;}.silex-id-1491511629302-8 {width: 113px; min-height: 42px; top: 14px; left: 338px;}.silex-id-1589025108829-5 {width: 113px; min-height: 42px; top: 14px; left: 493px;}.silex-id-1552766734977-2 {width: 100px; min-height: 100px; background-color: rgb(255, 255, 255); top: 100px; left: 653px;}@media only screen and (max-width: 480px) {.silex-id-1552766734977-2 {left: 394px; top: 38px; width: 20px; min-height: 24px; background-color: transparent;}}.silex-id-1585310255918-0 {width: 129px; min-height: 80px; top: 9px; left: 40px;}@media only screen and (max-width: 480px) {.silex-id-1585310255918-0 {min-height: 139px; top: -5px; left: 37px; width: 102px;}}.silex-id-1491510465972-1 {background-color: transparent; min-width: 1000px; border-color: #000000; background-image: url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM0Nzl9); background-size: cover; background-position: bottom center; background-attachment: scroll; background-repeat: repeat-x;}@media only screen and (max-width: 480px) {.silex-id-1491510465972-1 {}}.silex-id-1491510465971-0 {background-color: transparent; min-height: 598px; top: 0px; left: 0px; background-size: auto; background-position: center center; background-attachment: scroll; background-repeat: no-repeat;}@media only screen and (max-width: 480px) {.silex-id-1491510465971-0 {top: 0px; left: 0px; width: 462px; min-height: 273px; background-image: url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM0Nzl9);}}.silex-id-1491939403933-3 {width: 709px; background-color: rgba(48,147,178,0.2980392156862745); min-height: -1419px; top: 192px; left: 170px;}@media only screen and (max-width: 480px) {.silex-id-1491939403933-3 {min-height: 253px; top: 0px; left: 0px; width: 378px;}}.silex-id-1491513485462-16 {width: 651px; min-height: -12894px; top: 20px; left: 28px; background-color: rgba(0,0,0,0.30196078431372547);}.silex-id-1545826918214-2 {width: 20px; background-color: transparent; min-height: 20px; top: 0px; left: 0px;}.silex-id-1491514047727-17 {width: 37px; top: 187px; left: 3px; min-height: 140px; background-color: transparent;}@media only screen and (max-width: 480px) {.silex-id-1491514047727-17 {top: 0px; left: -75px; width: 194px; min-height: 128px;}}.silex-id-1491514255098-19 {background-color: transparent; min-width: 1000px;}@media only screen and (max-width: 480px) {.silex-id-1491514255098-19 {top: 795px; left: 0px;}}.silex-id-1545826847168-1 {width: 200px; background-color: transparent; min-height: 20px; top: 0px; left: 0px;}.silex-id-1491514255097-18 {background-color: rgba(255,255,255,1); min-height: 674px; top: 15px; left: 250px;}@media only screen and (max-width: 480px) {.silex-id-1491514255097-18 {min-height: 1073px;}}.silex-id-1491516513564-43 {width: 321px; background-color: rgb(255, 255, 255); min-height: 210px; top: 355px; left: 40px;}@media only screen and (max-width: 480px) {.silex-id-1491516513564-43 {top: 0px; left: 0px; width: 298px; min-height: 173px;}}.silex-id-1491516338811-42 {width: 356px; background-color: transparent; min-height: 270px; top: 7px; left: 0px;}@media only screen and (max-width: 480px) {.silex-id-1491516338811-42 {top: 184px; left: 11px; width: 433px; min-height: 191px;}}.silex-id-1491514313632-20 {width: 336px; min-height: 333px; top: -11px; left: 17px;}@media only screen and (max-width: 480px) {.silex-id-1491514313632-20 {top: 0px; left: 0px; width: 410px; min-height: 233px;}}.silex-id-1491516586068-44 {width: 624px; background-color: rgb(255, 255, 255); min-height: 593px; top: 29px; left: 377px;}.silex-id-1491514817330-22 {width: 596px; min-height: 573px; top: 14px; left: 29px; opacity: 1;}.silex-id-1491514707200-21 {width: 303px; min-height: 291px; top: 329px; left: 38px; border-radius: 300px 300px 300px 300px;}@media only screen and (max-width: 480px) {.silex-id-1491514707200-21 {top: 54px; left: 69px; width: 161px; min-height: 156px;}}.silex-id-1491515325968-26 {background-color: transparent; min-width: 1000px;}@media only screen and (max-width: 480px) {.silex-id-1491515325968-26 {top: 1868px; left: 0px;}}.silex-id-1545826961371-3 {width: 200px; background-color: transparent; min-height: 20px; top: 0px; left: 0px;}@media only screen and (max-width: 480px) {.silex-id-1545826961371-3 {width: 200px;}}.silex-id-1491515325967-25 {background-color: rgba(255,255,255,1); min-height: 755px; top: 0px; left: 0px;}@media only screen and (max-width: 480px) {.silex-id-1491515325967-25 {min-height: 2921px; top: 0px; left: 23px; width: 445px;}}.silex-id-1491515513624-31 {width: 22px; background-color: rgb(255, 255, 255); min-height: 280px; top: 20px; left: 514px; border-width: 0 0 0 1px; border-style: solid;}.silex-id-1491515549485-32 {width: 22px; background-color: rgb(255, 255, 255); min-height: 280px; top: 392px; left: 514px; border-width: 0 0 0 1px; border-style: solid;}.silex-id-1491515570342-33 {width: 442px; background-color: rgb(255, 255, 255); min-height: 20px; top: 340px; left: 14px; border-width: 1px 0 0 0; border-style: solid;}.silex-id-1491515596629-34 {width: 442px; background-color: rgb(255, 255, 255); min-height: 20px; top: 339px; left: 572px; border-width: 1px 0 0 0; border-style: solid;}@media only screen and (max-width: 480px) {.silex-id-1491515596629-34 {top: 13px; left: 11px; width: 419px; min-height: 20px;}}.silex-id-1491516663908-45 {width: 459px; background-color: rgb(255, 255, 255); min-height: 261px; top: 44px; left: 0px;}@media only screen and (max-width: 480px) {.silex-id-1491516663908-45 {top: 50px; left: 11px; width: 419px; min-height: 290px;}}.silex-id-1491515344876-27 {width: 453px; min-height: 225px; top: 16px; left: 22px;}@media only screen and (max-width: 480px) {.silex-id-1491515344876-27 {top: 14px; left: 10px; width: 398px; min-height: 262px;}}.silex-id-1491516734473-46 {width: 457px; background-color: rgb(255, 255, 255); min-height: 277px; top: 361px; left: 0px;}.silex-id-1491515363980-28 {width: 453px; min-height: 250px; top: 48px; left: 17px; background-color: rgba(232,232,232,1);}.silex-id-1491516774225-47 {width: 451px; background-color: rgb(255, 255, 255); min-height: 274px; top: 29px; left: 549px;}.silex-id-1491515366556-29 {width: 453px; min-height: 266px; top: 31px; left: -7px;}.silex-id-1491516807859-48 {width: 466px; background-color: rgb(255, 255, 255); min-height: 264px; top: 373px; left: 534px;}.silex-id-1491515375587-30 {width: 453px; min-height: 213px; top: 36px; left: 17px; background-color: rgba(232,232,232,1);}.silex-id-1589102309866-10 {width: 199px; min-height: 74px; top: 708px; left: 421px;}.silex-id-1491511864480-12 {background-color: rgba(0,64,128,1); min-width: 1000px;}@media only screen and (max-width: 480px) {.silex-id-1491511864480-12 {top: 8320px; left: 0px;}}.silex-id-1491515759410-36 {background-color: transparent; min-width: 1000px;}@media only screen and (max-width: 480px) {.silex-id-1491515759410-36 {top: 6665px; left: 0px;}}.silex-id-1545826982194-4 {width: 200px; background-color: transparent; min-height: 20px; top: 0px; left: 0px;}.silex-id-1491515759409-35 {background-color: rgba(255,255,255,1); min-height: 620px; top: 0px; left: 0px; opacity: 0.9;}@media only screen and (max-width: 480px) {.silex-id-1491515759409-35 {min-height: 1122px; width: 462px; top: 0px; left: 0px;}}.silex-id-1588590290909-6 {width: 400px; height: -1px; background-color: transparent; top: 75px; left: 585px;}.silex-id-1588590854384-7 {width: 524px; min-height: 640px; top: 51px; left: 41px;}.silex-id-1589020834702-1 {width: 536px; min-height: 355px; top: 50px; left: 232px;}.silex-id-1589021823956-2 {width: 234px; height: 400px; background-color: transparent; top: 71px; left: 531px;}.silex-id-1589021929651-3 {width: 287px; min-height: 532px; top: 49px; left: 240px;}.silex-id-1589024080307-4 {width: 527px; min-height: 305px; top: 50px; left: 234px;}.silex-id-1589099920727-6 {width: 100px; min-height: 100px; top: 11px; left: 460px;}.silex-id-1589100086123-7 {width: 100px; min-height: 100px; top: 10px; left: 464px;}.silex-id-1589100132276-8 {width: 151px; min-height: 100px; top: 11px; left: 428px;}.silex-id-1589101138505-9 {width: 151px; min-height: 100px; top: 11px; left: 429px;}.silex-id-1588588935701-2 {width: 199px; min-height: 74px; top: 572px; left: 432px;}.silex-id-1589103685792-11 {width: 444px; min-height: 223px; top: 176px; left: 295px;}.silex-id-1588589466255-5 {}.silex-id-1588589466142-4 {min-height: 100px;}</style>
+    <title>Fixi Berlin - bike repair anywhere </title>
+    <script type="text/json" class="silex-json-styles">[{"fonts":[{"family":"'Roboto', sans-serif","href":"https://fonts.googleapis.com/css?family=Roboto"}],"desktop":{"body-initial":{"background-color":"rgba(253,246,235,1)","top":"","left":"","background-image":"url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM0Nzl9)"},"silex-id-1474394621033-3":{"min-height":"600px","top":"5px","left":"0px"},"silex-id-1474394621032-2":{"min-height":"100px","background-color":"rgb(255, 255, 255)"},"silex-id-1474394605264-1":{"min-height":"100px","width":"100px","top":"100px","left":"100px"},"silex-id-1474394605263-0":{"min-height":"100px","background-color":"transparent"},"silex-id-1442914737143-3":{"min-height":"36px","width":"960px","top":"37px","left":"1px"},"null":{"min-width":"100px"},"silex-id-1491510465971-0":{"background-color":"transparent","min-height":"598px","top":"0px","left":"0px","background-image":"","background-size":"auto","background-position":"center center","background-attachment":"scroll","background-repeat":"no-repeat","opacity":"","border-radius":""},"silex-id-1491510465972-1":{"background-color":"transparent","min-width":"1000px","border-color":"#000000","background-image":"url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM0Nzl9)","background-size":"cover","background-position":"bottom center","background-attachment":"scroll","background-repeat":"repeat-x"},"silex-id-1491510574619-2":{"background-color":"rgba(253,246,235,1)","min-height":"100px","top":"15px","left":"250px"},"silex-id-1491510574619-3":{"background-color":"transparent","border-color":"#000000","min-width":"1000px","opacity":""},"silex-id-1491511288894-6":{"width":"113px","min-height":"42px","top":"15px","left":"29px","border-color":"#000000"},"silex-id-1491511582447-7":{"width":"113px","min-height":"42px","top":"15px","left":"181px"},"silex-id-1491511629302-8":{"width":"113px","min-height":"42px","top":"14px","left":"338px"},"silex-id-1491511864480-12":{"background-color":"rgba(0,64,128,1)","min-width":"1000px"},"silex-id-1491512678931-14":{"width":"852px","background-color":"transparent","min-height":"70px","top":"15px","left":"175px","border-color":"#000000"},"silex-id-1491512744410-15":{"width":"141px","min-height":"42px","top":"14px","left":"670px","border-width":"1px 1px 1px 1px ","border-style":"solid","border-color":"#a2ac87","background-color":"rgba(255,128,0,1)"},"silex-id-1491513485462-16":{"width":"651px","min-height":"-12894px","top":"20px","left":"28px","background-color":"rgba(0,0,0,0.30196078431372547)","opacity":""},"silex-id-1491514047727-17":{"width":"37px","top":"187px","left":"3px","min-height":"140px","background-color":"transparent"},"silex-id-1491514255097-18":{"background-color":"rgba(255,255,255,1)","min-height":"674px","top":"15px","left":"250px"},"silex-id-1491514255098-19":{"background-color":"transparent","min-width":"1000px"},"silex-id-1491514313632-20":{"width":"336px","min-height":"333px","top":"-11px","left":"17px"},"silex-id-1491514707200-21":{"width":"303px","min-height":"291px","top":"329px","left":"38px","border-radius":"300px 300px 300px 300px "},"silex-id-1491514817330-22":{"width":"596px","min-height":"573px","top":"14px","left":"29px","opacity":"1"},"silex-id-1491515325967-25":{"background-color":"rgba(255,255,255,1)","min-height":"755px","top":"0px","left":"0px"},"silex-id-1491515325968-26":{"background-color":"transparent","min-width":"1000px"},"silex-id-1491515344876-27":{"width":"453px","min-height":"225px","top":"16px","left":"22px"},"silex-id-1491515363980-28":{"width":"453px","min-height":"250px","top":"48px","left":"17px","background-color":"rgba(232,232,232,1)"},"silex-id-1491515366556-29":{"width":"453px","min-height":"266px","top":"31px","left":"-7px"},"silex-id-1491515375587-30":{"width":"453px","min-height":"213px","top":"36px","left":"17px","background-color":"rgba(232,232,232,1)"},"silex-id-1491515513624-31":{"width":"22px","background-color":"rgb(255, 255, 255)","min-height":"280px","top":"20px","left":"514px","border-width":"0 0 0 1px ","border-style":"solid"},"silex-id-1491515549485-32":{"width":"22px","background-color":"rgb(255, 255, 255)","min-height":"280px","top":"392px","left":"514px","border-width":"0 0 0 1px ","border-style":"solid"},"silex-id-1491515570342-33":{"width":"442px","background-color":"rgb(255, 255, 255)","min-height":"20px","top":"340px","left":"14px","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1491515596629-34":{"width":"442px","background-color":"rgb(255, 255, 255)","min-height":"20px","top":"339px","left":"572px","border-width":"1px 0 0 0 ","border-style":"solid"},"silex-id-1491515759409-35":{"background-color":"rgba(255,255,255,1)","min-height":"620px","top":"0px","left":"0px","opacity":"0.9"},"silex-id-1491515759410-36":{"background-color":"transparent","min-width":"1000px"},"silex-id-1491516338811-42":{"width":"356px","background-color":"transparent","min-height":"270px","top":"7px","left":"0px"},"silex-id-1491516513564-43":{"width":"321px","background-color":"rgb(255, 255, 255)","min-height":"210px","top":"355px","left":"40px"},"silex-id-1491516586068-44":{"width":"624px","background-color":"rgb(255, 255, 255)","min-height":"593px","top":"29px","left":"377px"},"silex-id-1491516663908-45":{"width":"459px","background-color":"rgb(255, 255, 255)","min-height":"261px","top":"44px","left":"0px"},"silex-id-1491516734473-46":{"width":"457px","background-color":"rgb(255, 255, 255)","min-height":"277px","top":"361px","left":"0px"},"silex-id-1491516774225-47":{"width":"451px","background-color":"rgb(255, 255, 255)","min-height":"274px","top":"29px","left":"549px"},"silex-id-1491516807859-48":{"width":"466px","background-color":"rgb(255, 255, 255)","min-height":"264px","top":"373px","left":"534px"},"silex-id-1491939403933-3":{"width":"709px","background-color":"rgba(48,147,178,0.2980392156862745)","min-height":"-1419px","top":"192px","left":"170px"},"silex-id-1545826847168-1":{"width":"200px","background-color":"transparent","min-height":"20px","top":"0px","left":"0px"},"silex-id-1545826918214-2":{"width":"20px","background-color":"transparent","min-height":"20px","top":"0px","left":"0px"},"silex-id-1545826961371-3":{"width":"200px","background-color":"transparent","min-height":"20px","top":"0px","left":"0px"},"silex-id-1545826982194-4":{"width":"200px","background-color":"transparent","min-height":"20px","top":"0px","left":"0px"},"silex-id-1545827260517-5":{"width":"","background-color":"","min-height":"100px"},"silex-id-1552766682348-1":{"min-height":"27px","width":"33px","background-color":"transparent","top":"8136.36328125px","left":"686px"},"silex-id-1552766734977-2":{"width":"100px","min-height":"100px","background-color":"rgb(255, 255, 255)","top":"100px","left":"653px"},"silex-id-1585310255918-0":{"width":"129px","min-height":"80px","top":"9px","left":"40px"},"silex-id-1491515247116-23":{"min-height":"0px","top":"0px","left":"0px"},"silex-id-1585385387710-1":{"width":"630px","min-height":"336px","top":"89px","left":"248px","background-color":"transparent","opacity":""},"silex-id-1585388606715-4":{"min-height":"64px","top":"0px","left":"0px","width":"92px"},"silex-id-1585388675731-5":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585388404134-2":{"min-height":"64px","top":"0px","left":"0px","width":"92px"},"silex-id-1491515891360-38":{"min-height":"181px","top":"0px","left":"0px","width":"328px"},"silex-id-1548871990043-1":{"height":"391px","top":"0px","left":"0px","width":"368px"},"silex-id-1548871943671-0":{"height":"724px","top":"0px","left":"0px","width":"466px"},"silex-id-1491516086959-39":{"min-height":"0px","top":"0px","left":"0px"},"silex-id-1491517444228-49":{"min-height":"0px","top":"0px","left":"0px"},"silex-id-1491517451740-51":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585390998617-6":{"height":"391px","top":"0px","left":"0px","width":"368px"},"silex-id-1585391112739-8":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1491511629304-9":{"min-height":"70px","top":"0px","left":"0px","width":"0px"},"silex-id-1585394128334-0":{"min-height":"0px","top":"0px","left":"100px","width":"0px"},"silex-id-1491511866976-13":{"min-height":"128px","top":"0px","left":"0px","width":"276px"},"silex-id-1585395862219-1":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585396982537-3":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585396993871-4":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585586262140-0":{"width":"506px","min-height":"180px","top":"8px","left":"231.75px"},"silex-id-1585587324339-1":{"width":"100px","min-height":"-3572690px","top":"-2px","left":"414px","background-color":"transparent"},"silex-id-1491511864479-11":{"min-height":"0px","top":"0px","left":"0px"},"silex-id-1585391031157-7":{"height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585391192201-9":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1588588935701-2":{"width":"199px","min-height":"74px","top":"572px","left":"432px"},"silex-id-1588589454712-3":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1588589466142-4":{"width":"","min-height":"100px","background-color":""},"silex-id-1588589466255-5":{},"silex-id-1588590290909-6":{"width":"400px","height":"-1px","background-color":"transparent","top":"75px","left":"585px"},"silex-id-1588590854384-7":{"width":"524px","min-height":"640px","top":"51px","left":"41px"},"silex-id-1589019179067-0":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1589020834702-1":{"width":"536px","min-height":"355px","top":"50px","left":"232px"},"silex-id-1589021823956-2":{"width":"234px","height":"400px","background-color":"transparent","top":"71px","left":"531px"},"silex-id-1589021929651-3":{"width":"287px","min-height":"532px","top":"49px","left":"240px"},"silex-id-1589024080307-4":{"width":"527px","min-height":"305px","top":"50px","left":"234px"},"silex-id-1589025108829-5":{"width":"113px","min-height":"42px","top":"14px","left":"493px"},"silex-id-1589099920727-6":{"width":"100px","min-height":"100px","top":"11px","left":"460px"},"silex-id-1589100086123-7":{"width":"100px","min-height":"100px","top":"10px","left":"464px"},"silex-id-1589100132276-8":{"width":"151px","min-height":"100px","top":"11px","left":"428px"},"silex-id-1589101138505-9":{"width":"151px","min-height":"100px","top":"11px","left":"429px"},"silex-id-1588583872850-0":{"min-height":"0px","top":"0px","left":"0px"},"silex-id-1589102309866-10":{"width":"199px","min-height":"74px","top":"708px","left":"421px"},"silex-id-1589103685792-11":{"width":"444px","min-height":"223px","top":"176px","left":"295px"}},"mobile":{"silex-id-1491515759410-36":{"top":"6665px","left":"0px"},"silex-id-1491515759409-35":{"min-height":"1122px","width":"462px","top":"0px","left":"0px"},"silex-id-1491514047727-17":{"top":"0px","left":"-75px","width":"194px","min-height":"128px"},"silex-id-1491514255097-18":{"min-height":"1073px"},"silex-id-1491514255098-19":{"top":"795px","left":"0px"},"silex-id-1491515325968-26":{"top":"1868px","left":"0px"},"silex-id-1491515325967-25":{"min-height":"2921px","top":"0px","left":"23px","width":"445px"},"silex-id-1491515596629-34":{"top":"13px","left":"11px","width":"419px","min-height":"20px"},"silex-id-1491516663908-45":{"top":"50px","left":"11px","width":"419px","min-height":"290px"},"silex-id-1491515344876-27":{"top":"14px","left":"10px","width":"398px","min-height":"262px"},"silex-id-1491514707200-21":{"top":"54px","left":"69px","width":"161px","min-height":"156px"},"silex-id-1491516513564-43":{"top":"0px","left":"0px","width":"298px","min-height":"173px"},"silex-id-1491516338811-42":{"top":"184px","left":"11px","width":"433px","min-height":"191px"},"silex-id-1491514313632-20":{"top":"0px","left":"0px","width":"410px","min-height":"233px"},"silex-id-1491511864480-12":{"top":"8320px","left":"0px"},"silex-id-1552766682348-1":{"left":"-12px","top":"8868px"},"silex-id-1552766734977-2":{"left":"394px","top":"38px","width":"20px","min-height":"24px","background-color":"transparent"},"silex-id-1491510465971-0":{"top":"0px","left":"0px","width":"462px","min-height":"273px","background-image":"url(https://images.unsplash.com/photo-1485965120184-e220f721d03e?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=1080&fit=max&ixid=eyJhcHBfaWQiOjM0Nzl9)"},"silex-id-1545826961371-3":{"width":"200px"},"silex-id-1491511225781-5":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585310255918-0":{"min-height":"139px","top":"-5px","left":"37px","width":"102px"},"silex-id-1491939403933-3":{"min-height":"253px","top":"0px","left":"0px","width":"378px"},"body-initial":{"background-image":""},"silex-id-1491510465972-1":{"background-image":""},"silex-id-1585393206766-10":{"min-height":"0px","top":"0px","left":"0px","width":"0px"},"silex-id-1585587324339-1":{"min-height":"120px","top":"0px","left":"0px","width":"100px"},"silex-id-1585586262140-0":{"min-height":"180px","top":"0px","left":"0px","width":"462px"}},"prodotypeData":{"component":{"silex-id-1491514047727-17":{"name":"share1","templateName":"share","networks":["Facebook","Twitter","Email"],"url":"http://silex-templates.silex.me/beauty/index.html","title":"Beauty Saloon Template","description":"Beauty Saloon Template","style":"Simple Icons"},"silex-id-1491516338811-42":{"name":"animated-container1","templateName":"animated-container","scale":"1"},"silex-id-1491516513564-43":{"name":"animated-container2","templateName":"animated-container","scale":"1","origin":"bottom","rotateX":"0","rotateZ":"0","rotateY":"100","distance":"0px","opacity":"-1"},"silex-id-1491516586068-44":{"name":"animated-container3","templateName":"animated-container","scale":"1","origin":"right"},"silex-id-1491516663908-45":{"name":"animated-container4","templateName":"animated-container","scale":"1","origin":"left","distance":"20px"},"silex-id-1491516734473-46":{"name":"animated-container5","templateName":"animated-container","scale":"1","origin":"bottom"},"silex-id-1491516774225-47":{"name":"animated-container6","templateName":"animated-container","origin":"right","distance":"20px","scale":"1"},"silex-id-1491516807859-48":{"name":"animated-container7","templateName":"animated-container","origin":"bottom","scale":"1"},"silex-id-1491939403933-3":{"name":"animated-container9","templateName":"animated-container","distance":"0px","delay":"1500","duration":"1500","easing":"ease","opacity":"0","scale":"0.99"},"silex-id-1552766682348-1":{"name":"hamburger1","templateName":"hamburger","fixed":true,"links":[{"properties":{"href":"#!page-home"},"text":"Home"},{"properties":{"href":"#!page-home#about"},"text":"About us"},{"text":"Service","properties":{"href":"#!page-prices","title":"Prices"}},{"properties":{"href":"#!page-order","title":"Order"},"text":"Order"}],"button-background-color":"#000000"},"silex-id-1588590290909-6":{"name":"form1","templateName":"form","sendTo":"radrepman@gmail.com","submitButtonLabel":"Place Order","labelTextColor":"#b98a68","field1":true,"label2":"Mobile Phone Number","placeholder2":"Phone number with extension","label3":"Your Order Details","placeholder3":"Please include all details listed ","onsubmit":""},"silex-id-1589021823956-2":{"name":"form2","templateName":"form","sendTo":"radrepman@gmail.com","label3":"Your feedback","labelTextColor":"#b08b82"}},"style":{"all-style":{"className":"all-style","templateName":"text","displayName":"All Style","styles":{"desktop":{"normal":{"className":"all-style","pseudoClass":"normal","All":{"font-family":"'Roboto', sans-serif","color":"#313131","font-size":"16px","line-height":"2"},"Link":{"color":"#2f2f2f","text-decoration":"none"},"Heading1":{"font-size":"50px","font-weight":"100","color":"#ffffff","line-height":"1"},"Heading2":{"font-weight":"100","font-size":"50px","color":"","line-height":"1","text-align":"center"},"UnorderedList":{"list-style-type":"none","text-align":"center"},"Element":{"transition":[{}]},"Paragraph":{"color":"#000000","font-size":""},"Heading3":{"color":"#ffffff","background-color":"#000000"}}},"mobile":{"normal":{"templateName":"text","className":"all-style","pseudoClass":"normal","All":{"font-size":"2em"},"UnorderedList":{"font-size":"24px","line-height":"4","text-indent":"-40px","list-style-position":""}}}}},"card":{"className":"card","templateName":"text","displayName":"card","styles":{"desktop":{"normal":{"className":"card","pseudoClass":"normal","All":{"text-align":"center","color":"#262626","background-color":"#ffffff","font-weight":"normal"},"Paragraph":{"text-align":"left"},"Heading3":{"background-color":"#ffffff","color":"#000000"}}}}},"header":{"className":"header","templateName":"text","displayName":"header","styles":{"desktop":{"normal":{"className":"header","pseudoClass":"normal","All":{"text-align":"center","color":""},"Heading1":{"color":"#ffffff"},"Paragraph":{"color":"#ffffff","font-weight":"bold","font-size":"30px"}}}}},"white":{"className":"white","templateName":"text","displayName":"white","styles":{"desktop":{"normal":{"className":"white","pseudoClass":"normal","All":{"color":"#ffffff"},"Link":{"color":"#ffffff"},"Heading2":{"color":"#ffffff"},"Heading1":{"color":"#ffffff"}}}}},"nav":{"className":"nav","templateName":"text","displayName":"nav","styles":{"desktop":{"normal":{"className":"nav","pseudoClass":"normal","All":{"line-height":"3","text-align":"center","letter-spacing":"2px","font-size":"14px","color":"#A2AC87"},"Link":{"color":"#b08b82"},"Active":{"color":"#3093b2"}}}}},"style-black":{"className":"style-black","templateName":"text","displayName":"black","styles":{"desktop":{"normal":{"className":"style-black","pseudoClass":"normal","Paragraph":{"column-rule-style":"none"}}}}}}}}]</script>
+
+
+
+
+
+
+
+
+
+    <meta name="website-width" content="1024">
+    <style type="text/css" class="silex-style-settings">.website-width {width: 1024px;}</style>
+
+
+    
+
+
+    
+    
+    
+
+    <meta name="description" content="Bike repair, anywhere. We provide a fast and accessible location based bicycle repair service in Berlin.  ">
+    <link href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAfQAAAH0CAYAAADL1t+KAAAgAElEQVR4XuydCXhU5dn+7+fMZGdfAgoCWUC2TIBoW1tpkQRx6aJtUUC72E3bIrS1q61La+33tdoWQW3166otoPjvYhcVEkur1apEyIRVkoDgBsgOWWfO87/eABY1kJnkzDlnTu73urii5LzP8nte5p5zzrsI2EiABEiABEiABNKegKR9BkyABEiABEiABEgAFHQOAhIgARIgARIIAAEKegCKyBRIgARIgARIgILOMUACJEACJEACASBAQQ9AEZkCCZAACZAACVDQOQZIgARIgARIIAAEKOgBKCJTIAESIAESIAEKOscACZAACZAACQSAAAU9AEVkCiRAAiRAAiRAQecYIAESIAESIIEAEKCgB6CITIEESIAESIAEKOgcAyRAAiRAAiQQAAIU9AAUkSmQAAmQAAmQAAWdY4AESIAESIAEAkCAgh6AIjIFEiABEiABEqCgcwyQAAmQAAmQQAAIUNADUESmQAIkQAIkQAIUdI4BEiABEiABEggAAQp6AIrIFEiABEiABEiAgs4xQAIkQAIkQAIBIEBBD0ARmQIJkAAJkAAJUNA5BkiABEiABEggAAQo6AEoIlMgARIgARIgAQo6xwAJkAAJkAAJBIAABT0ARWQKJEACJEACJEBB5xggARIgARIggQAQoKAHoIhMgQRIgARIgAQo6BwDJEACJEACJBAAAhT0ABSRKZAACZAACZAABZ1jgARIgARIgAQCQICCHoAiMgUSIAESIAESoKBzDJAACZAACZBAAAhQ0ANQRKZAAiRAAiRAAhR0jgESIAESIAESCAABCnoAisgUSIAESIAESICCzjFAAiRAAiRAAgEgQEEPQBGZAgmQAAmQAAlQ0DkGSIAESIAESCAABCjoASgiUyABEiABEiABCjrHAAmQAAmQAAkEgAAFPQBFZAokQAIkQAIkQEHnGCABEiABEiCBABCgoAegiEyBBEiABEiABCjoHAMkQAIkQAIkEAACFPQAFJEpkAAJkAAJkAAFnWOABEiABEiABAJAgIIegCIyBRIgARIgARKgoHMMkAAJkAAJkEAACFDQA1BEpkACJEACJEACFHSOARIgARIgARIIAAEKegCKyBRIgARIgARIgILOMUACJEACJEACASBAQQ9AEZkCCZAACZAACVDQOQZIgARIgARIIAAEKOgBKCJTIAESIAESIAEKOscACZAACZAACQSAAAU9AEVkCiRAAiRAAiRAQecYIAESIAESIIEAEKCgB6CITIEESIAESIAEKOgcAyRAAiRAAiQQAAIU9AAUkSmQAAmQAAmQAAWdY4AESIAESIAEAkCAgh6AIjIFEiABEiABEqCgcwyQAAmQAAmQQAAIUNADUESmQAIkQAIkQAIUdI4BEiABEiABEggAAQp6AIrIFEiABEiABEiAgs4xQAIkQAIkQAIBIEBBD0ARmQIJkAAJkAAJUNA5BkiABEiABEggAAQo6AEoIlMgARIgARIgAQo6xwAJkAAJkAAJBIAABT0ARWQKJEACJEACJEBB5xggARIgARIggQAQoKAHoIhMgQRIgARIgAQo6BwDJEACJEACJBAAAhT0ABSRKZAACZAACZAABZ1jgARIgARIgAQCQICCHoAiMgUSIAESIAESoKBzDJAACZAACZBAAAhQ0ANQRKZAAiRAAiRAAhR0jgESIAESIAESCAABCnoAisgUSIAESIAESICCzjFAAiRAAiRAAgEgQEEPQBGZAgmQAAmQAAlQ0DkGSIAESIAESCAABCjoASgiUyABEiABEiABCjrHAAmQAAmQAAkEgAAFPQBFZAokQAIkQAIkQEHnGCABEiABEiCBABCgoAegiEyBBEiABEiABCjoHAMkQAIkQAIkEAACFPQAFJEpkAAJkAAJkAAFnWOABEiABEiABAJAgIIegCIyBRIgARIgARKgoHMMkAAJkAAJkEAACFDQA1BEpkACJEACJEACFHSOARIgARIgARIIAAEKegCKyBRIgARIgARIgILOMUACJEACJEACASBAQQ9AEZkCCZAACZAACVDQOQZIgARIgARIIAAEKOgBKCJTIAESIAESIAEKOscACZAACZAACQSAAAU9AEVkCiRAAiRAAiRAQecYIAESIAESIIEAEKCgB6CITIEESIAESIAEKOgcAyRAAiRAAiQQAAIU9AAUkSmQAAmQAAmQAAWdY4AESIAESIAEAkCAgh6AIjIFEiABEiABEqCgcwyQAAmQAAmQQAAIUNADUESmQAIkQAIkQAIUdI4BEiABEiABEggAAQp6AIrIFEiABEiABEiAgs4xQAIkQAIkQAIBIEBBD0ARmQIJkAAJkAAJUNA5BkiABEiABEggAAQo6AEo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" rel="shortcut icon">
+
+    
+    
+<style class="silex-prodotype-style" type="text/css" data-style-id="all-style">h1 {font-weight: 100; font-size: 50px; color: #ffffff; line-height: 1;}h2 {font-weight: 100; font-size: 50px; text-align: center; line-height: 1;}h3 {color: #ffffff; background-color: #000000;}.text-element > .silex-element-content {font-family: 'Roboto', sans-serif; font-size: 16px; color: #313131; line-height: 2;}p {color: #000000;}a {color: #2f2f2f; text-decoration: none;}[data-silex-href] {color: #2f2f2f; text-decoration: none;}ul li {list-style-type: none; text-align: center;}.editable-style {-webkit-transition: all 1s ease; -moz-transition: all 1s ease; -o-transition: all 1s ease; transition: all 1s ease;}@media only screen and (max-width: 480px) {.text-element > .silex-element-content {font-size: 2em;}ul li {font-size: 24px; line-height: 4; text-indent: -40px;}}</style><link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" class="silex-custom-font"><style class="silex-prodotype-style" type="text/css" data-style-id="card">.card h3 {color: #000000; background-color: #ffffff;}.card.text-element > .silex-element-content {font-weight: normal; color: #262626; background-color: #ffffff; text-align: center;}.card p {text-align: left;}</style><style class="silex-prodotype-style" type="text/css" data-style-id="header">.header h1 {color: #ffffff;}.header.text-element > .silex-element-content {text-align: center;}.header p {font-weight: bold; font-size: 30px; color: #ffffff;}</style><style class="silex-prodotype-style" type="text/css" data-style-id="white">.white h1 {color: #ffffff;}.white h2 {color: #ffffff;}.white.text-element > .silex-element-content {color: #ffffff;}.white a {color: #ffffff;}.white [data-silex-href] {color: #ffffff;}</style><style class="silex-prodotype-style" type="text/css" data-style-id="nav">.nav.text-element > .silex-element-content {font-size: 14px; color: #A2AC87; text-align: center; line-height: 3; letter-spacing: 2px;}.nav a {color: #b08b82;}.nav [data-silex-href] {color: #b08b82;}.nav .page-link-active {color: #3093b2;}</style><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="hostingProvider" content="ghpages"><meta name="websiteUrl" content="fahrradfixi.de"><meta name="publicationPath" content="{&quot;absPath&quot;:&quot;/ce/github/get/Website/master/Publish&quot;,&quot;size&quot;:0,&quot;modified&quot;:&quot;2020-03-30T16:28:17Z&quot;,&quot;name&quot;:&quot;Publish&quot;,&quot;isDir&quot;:true,&quot;mime&quot;:&quot;application/directory&quot;,&quot;folder&quot;:&quot;Website/master&quot;,&quot;path&quot;:&quot;Website/master/Publish&quot;,&quot;service&quot;:&quot;github&quot;,&quot;url&quot;:&quot;https://editor.silex.me/ce/github/get/Website/master/Publish&quot;}"><meta name="twitter:title" content="Fixi - Bike repair anywhere Berlin"><meta name="og:title" content="Fixi - Bike repair anywhere Berlin"><meta name="twitter:description" content="Start up providing mobile bicycle repairs in Berlin "><meta name="og:description" content="Start up providing mobile bicycle repairs in Berlin "><style class="silex-prodotype-style" type="text/css" data-style-id="style-black">.style-black p {column-rule-style: none;}</style><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js" data-dependency="" type="text/javascript"></script><meta name="twitter:card" content="summary"><!-- Silex HEAD tag do not remove -->
+    <!-- End of Silex HEAD tag do not remove --></head>
+
+<body data-silex-id="body-initial" class="body-initial all-style enable-mobile prevent-draggable prevent-resizable prevent-selectable silex-runtime" data-silex-type="container-element" style="height: 100%;"><div data-silex-type="container-element" class="prevent-draggable container-element editable-style silex-id-1491510574619-3 section-element prevent-resizable nav-section" data-silex-id="silex-id-1491510574619-3">
+        <div data-silex-type="container-element" class="editable-style silex-id-1491510574619-2 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1491510574619-2">
+            
+
+            
+        <div data-silex-type="text-element" class="editable-style text-element silex-component prevent-resizable silex-id-1552766682348-1 hide-on-desktop prevent-auto-z-index hamburger-menu" data-silex-id="silex-id-1552766682348-1"><div class="silex-element-content normal"><style>.hamburger-menu_1585645338984_388 {position: absolute; z-index: 20;}.silex-editor .hamburger-menu_1585645338984_388 nav {left: -9999px;}.hamburger-menu_1585645338984_388 nav ul {margin-top: 80px;}.hamburger-menu_1585645338984_388 nav {opacity: 0; position: absolute; background-color: #ededed; transition: left 1s ease, height 0s ease 1s; left: -300px; width: 300px; height: 20px;}.hamburger-menu_1585645338984_388.open nav {opacity: 1; height: 100vh; left: 0; transition: left 1s ease, height 0s ease 0s;}.hamburger-menu_1585645338984_388 .nav-container {z-index: 10; position: absolute;}.hamburger-menu_1585645338984_388.open .nav-container {}.hamburger-menu_1585645338984_388 .hamburger-btn {z-index: 20; cursor: pointer; position: absolute;}.hamburger-menu_1585645338984_388 .hamburger-btn span {display: block; width: 30px; height: 5px; margin-bottom: 3px; position: relative; background-color: #000000; border: 1px solid #ffffff; border-radius: 3px; transition: border-color 0.1s ease-in,
+      opacity 0.1s ease-in,
+      transform 0.1s ease-in,
+      background 0.1s ease-in;}.hamburger-menu_1585645338984_388.open .hamburger-btn span {border-color: rgba(255, 255, 255, 0);}.hamburger-menu_1585645338984_388 .hamburger-btn span:first-child {transform-origin: 4px -2px;}.hamburger-menu_1585645338984_388.open .hamburger-btn span:first-child {transform: rotate(45deg) translate(7px, -4px);}.hamburger-menu_1585645338984_388.open .hamburger-btn span:nth-last-child(2) {opacity: 0;}.hamburger-menu_1585645338984_388 .hamburger-btn span:nth-child(3) {transform-origin: -11px 4px;}.hamburger-menu_1585645338984_388.open .hamburger-btn span:nth-child(3) {transform: rotate(-45deg) translate(0, 12px);}</style>
+<!-- inspired by https://codepen.io/erikterwan/pen/EVzeRP -->
+<div class="hamburger-menu_1585645338984_388 closed">
+    <div class="hamburger-btn fixed">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <div class="nav-container">
+      <div class="prevent-scale">
+        <nav role="navigation" class="">
+            <ul>
+            
+                <li><a href="#!page-home" class="">Home</a></li>
+            
+                <li><a href="#!page-home#about">About us</a></li>
+            
+                <li><a href="#!page-prices" title="Prices" class="">Service</a></li>
+            
+                <li><a href="#!page-order" title="Order" class="">Order</a></li>
+            
+            </ul>
+        </nav>
+      </div>
+  </div>
+</div>
+<script type="text/javascript">
+(function() {
+  var isOpen = false;
+  function close() {
+    isOpen = false;
+    $('.hamburger-menu_1585645338984_388').removeClass('open');
+    $('.hamburger-menu_1585645338984_388').addClass('closed');
+  }
+  function open() {
+    isOpen = true;
+    $('.hamburger-menu_1585645338984_388').addClass('open');
+    $('.hamburger-menu_1585645338984_388').removeClass('closed');
+  }
+  function toggle() {
+    if(isOpen) close();
+    else open();
+  }
+  var silexElement = $('.hamburger-menu_1585645338984_388').closest('.editable-style');
+  function move(data) {
+    var offset = silexElement.offset();
+    $('.hamburger-menu_1585645338984_388 .nav-container').css({
+      'transform': 'translate(' + (data.scrollLeft - (offset.left/data.scale)) + 'px, ' + (data.scrollTop - (offset.top/data.scale)) + 'px)'
+    });
+  }
+  $('.hamburger-menu_1585645338984_388 .hamburger-btn').click(function() { toggle(); });
+  $(document).on('silex.scroll silex.resize', function(e, data) {
+    close();
+    move(data);
+  });
+  close();
+})();
+</script>
+</div></div><div data-silex-type="container-element" class="editable-style silex-id-1491512678931-14 container-element hide-on-mobile" data-silex-id="silex-id-1491512678931-14" style=""><div data-silex-type="text-element" class="editable-style text-element silex-id-1491512744410-15 nav-button cta nav" data-silex-id="silex-id-1491512744410-15" style="">
+                    <div class="silex-element-content normal"><a href="#!page-order" title="order" class=""><b>ORDER</b></a></div>
+                </div>
+                <div data-silex-type="text-element" class="editable-style silex-id-1491511288894-6 text-element nav-button anchor-link nav" data-silex-id="silex-id-1491511288894-6" style="">
+                    <div class="silex-element-content normal"><a href="#!page-home" class="">HOME</a></div>
+                </div>
+                <div data-silex-type="text-element" class="editable-style text-element silex-id-1491511582447-7 nav-button anchor-link nav" data-silex-id="silex-id-1491511582447-7" style="">
+                    <div class="silex-element-content normal"><a href="#!page-about-us-" title="about us" class="">ABOUT US</a></div>
+                </div>
+                
+                
+                
+            <div data-silex-type="text-element" class="editable-style text-element silex-id-1491511629302-8 nav-button anchor-link nav" data-silex-id="silex-id-1491511629302-8" style="">
+                    <div class="silex-element-content normal"><a href="#!page-prices" title="prices" class="">PRICES</a></div>
+                </div><div data-silex-type="text-element" class="editable-style text-element silex-id-1589025108829-5 nav-button anchor-link nav" data-silex-id="silex-id-1589025108829-5" style="">
+                    <div class="silex-element-content normal"><a href="#!page-feedback" title="feedback" class="">FEEDBACK</a></div>
+                </div></div><div data-silex-type="container-element" class="editable-style silex-id-1552766734977-2 container-element hide-on-desktop" data-silex-id="silex-id-1552766734977-2"></div><div data-silex-type="image-element" class="editable-style silex-id-1585310255918-0 image-element" data-silex-id="silex-id-1585310255918-0" style=""><img src="../../Image/Logo/fixi.png" class="silex-element-content"></div></div>
+    </div>
+    
+    <div data-silex-type="container-element" class="prevent-draggable container-element editable-style silex-id-1491510465972-1 section-element paged-element prevent-resizable page-home home" data-silex-id="silex-id-1491510465972-1">
+        
+
+        
+    <div data-silex-type="container-element" class="editable-style silex-id-1491510465971-0 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1491510465971-0" style="">
+
+            
+        <div data-silex-type="container-element" class="editable-style silex-id-1491939403933-3 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491939403933-3" style="">
+                <div id="id_1491939479270_560"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491939479270_560);
+                      // animate this element at start
+                      animate_1491939479270_560();
+                      // the function to start the animation
+                      function animate_1491939479270_560 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491939479270_560').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '0px',
+                            duration: 1500,
+                            delay: 1500,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 0.99,
+                            easing: 'ease',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style silex-id-1491513485462-16 text-element title header" data-silex-id="silex-id-1491513485462-16" style="">
+                    <div class="silex-element-content normal">
+                        <h1>
+
+</h1><h1>Bike repair, anywhere</h1><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>
+                </div>
+            </div></div><div data-silex-type="html-element" class="editable-style html-element silex-id-1545826918214-2" data-silex-id="silex-id-1545826918214-2" style=""><div class="silex-element-content"><p id="home"></p></div></div><div data-silex-type="html-element" class="editable-style silex-id-1491514047727-17 html-element silex-component silex-component-share" data-silex-id="silex-id-1491514047727-17" style="">
+            <div class="silex-element-content">
+                <ul class="share-buttons" id="id_1495974349250_874">
+
+                    <li>
+                        <a href="https://www.facebook.com/sharer/sharer.php?u=http://silex-templates.silex.me/beauty/index.html&amp;t=Beauty%20Saloon%20Template" title="Share on Facebook" target="_blank"><img alt="Share on Facebook" data-silex-static="" src="https://editor.silex.me/static/2.10/simplesharingbuttons/simple_icons/Facebook.png"></a>
+                    </li>
+
+
+                    <li>
+                        <a href="https://twitter.com/intent/tweet?source=http://silex-templates.silex.me/beauty/index.html&amp;text=Beauty%20Saloon%20Template:%20http://silex-templates.silex.me/beauty/index.html&amp;via=silexlabs" target="_blank" title="Share on Twitter"><img alt="Twitt" data-silex-static="" src="https://editor.silex.me/static/2.10/simplesharingbuttons/simple_icons/Twitter.png"></a>
+                    </li>
+
+
+
+
+
+
+
+
+
+
+                    <li>
+                        <a href="mailto:?subject=Beauty%20Saloon%20Template&amp;body=Beauty%20Saloon%20Template:%20http://silex-templates.silex.me/beauty/index.html" target="_blank" title="Send email"><img alt="Send by email" data-silex-static="" src="https://editor.silex.me/static/2.10/simplesharingbuttons/simple_icons/Email.png"></a>
+                    </li>
+
+                </ul>
+
+                <style type="text/css">#id_1495974349250_874.share-buttons {list-style: none; padding: 0;}#id_1495974349250_874.share-buttons li {display: inline;}#id_1495974349250_874.share-buttons .sr-only {position: absolute; clip: rect(1px, 1px, 1px, 1px); padding: 0; border: 0; height: 1px; width: 1px; overflow: hidden;}</style>
+            </div>
+        </div></div>
+
+    <div class="silex-pages">
+        
+
+        <a id="page-home" data-silex-type="page-element" class="page-element" href="#!page-home">home</a><a id="page-about-us-" href="#!page-about-us-" data-silex-type="page-element" class="page-element">about us </a><a id="page-prices" href="#!page-prices" data-silex-type="page-element" class="page-element">prices</a><a id="page-order" data-silex-type="page-element" class="page-element" href="#!page-order">order</a><a id="page-feedback" href="#!page-feedback" data-silex-type="page-element" class="page-element">feedback</a><a id="page-order-placed" href="#!page-order-placed" data-silex-type="page-element" class="page-element">order placed</a></div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    <div data-silex-type="container-element" class="prevent-draggable container-element editable-style silex-id-1491514255098-19 section-element paged-element prevent-resizable page-home about" data-silex-id="silex-id-1491514255098-19"><div data-silex-type="html-element" class="editable-style html-element silex-id-1545826847168-1" data-silex-id="silex-id-1545826847168-1" style=""><div class="silex-element-content"><p id="about"></p></div></div>
+        <div data-silex-type="container-element" class="editable-style silex-id-1491514255097-18 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1491514255097-18">
+
+
+
+
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516513564-43 container-element silex-component silex-component-animated-container hide-on-mobile" data-silex-id="silex-id-1491516513564-43" style="">
+                <div id="id_1491938633958_664"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491938633958_664);
+                      // animate this element at start
+                      animate_1491938633958_664();
+                      // the function to start the animation
+                      function animate_1491938633958_664 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491938633958_664').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'bottom',
+                            distance: '0px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 100, z: 0 },
+                            opacity: -1,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                
+            </div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516338811-42 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491516338811-42">
+                <div id="id_1491516496248_744"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491516496248_744);
+                      // animate this element at start
+                      animate_1491516496248_744();
+                      // the function to start the animation
+                      function animate_1491516496248_744 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491516496248_744').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style silex-id-1491514313632-20 text-element header" data-silex-id="silex-id-1491514313632-20" style="">
+                    <div class="silex-element-content normal">
+                         <h2><b>24/7 Berlin bicycle repair service at the customer's location</b></h2><p>
+
+</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div>
+                </div>
+            </div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516586068-44 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491516586068-44" style="">
+                <div id="id_1491937951820_924"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491937951820_924);
+                      // animate this element at start
+                      animate_1491937951820_924();
+                      // the function to start the animation
+                      function animate_1491937951820_924 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491937951820_924').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'right',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style silex-id-1491514817330-22 text-element content style-black" data-silex-id="silex-id-1491514817330-22" style="">
+                    <div class="silex-element-content normal">
+                        <p>Flat tire on the way to work? Bike just needs some TLC? Don't want to stress about getting to a bike shop, paying for the inconvenience or having to wait a few days for the repair? Simply input your location and the desired time of repair, we will ensure your bike will be ready to go within 45 minutes.&nbsp;</p><p>We provide quick mobile repairs within the AB Travel Zone (within the ring bahn) in Berlin.&nbsp;</p><p>
+
+</p><p><br></p><p><br></p><p><br></p><p>Founder<b> Gavriel Vinegrad</b> moved to Berlin in 2019 with a desire to utilise his passion for cycling and fixing bicycles to provide an innovative bike repair service to meet Berlin's increasing bicycle usage.&nbsp;</p><p><br></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        <div data-silex-type="image-element" class="editable-style silex-id-1491514707200-21 image-element hide-on-mobile" data-silex-id="silex-id-1491514707200-21" style=""><img src="../../Image/Logo/Gav.png" class="silex-element-content"></div></div>
+    </div><div data-silex-type="container-element" class="prevent-draggable container-element editable-style silex-id-1491515325968-26 section-element paged-element prevent-resizable page-home service" data-silex-id="silex-id-1491515325968-26"><div data-silex-type="html-element" class="editable-style html-element silex-id-1545826961371-3" data-silex-id="silex-id-1545826961371-3" style=""><div class="silex-element-content"><p id="service"></p></div></div><div data-silex-type="container-element" class="editable-style silex-id-1491515325967-25 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1491515325967-25" style="">
+
+
+
+
+
+            <div data-silex-type="container-element" class="editable-style silex-id-1491515513624-31 container-element hide-on-mobile" data-silex-id="silex-id-1491515513624-31" style=""></div>
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1491515549485-32 hide-on-mobile" data-silex-id="silex-id-1491515549485-32" style=""></div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491515570342-33 container-element hide-on-mobile" data-silex-id="silex-id-1491515570342-33" style=""></div>
+            <div data-silex-type="container-element" class="editable-style container-element silex-id-1491515596629-34" data-silex-id="silex-id-1491515596629-34" style=""></div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516663908-45 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491516663908-45">
+                <div id="id_1491938728527_125"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491938728527_125);
+                      // animate this element at start
+                      animate_1491938728527_125();
+                      // the function to start the animation
+                      function animate_1491938728527_125 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491938728527_125').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'left',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style text-element silex-id-1491515344876-27 content card" data-silex-id="silex-id-1491515344876-27" style="">
+                    <div class="silex-element-content normal">
+                        <h3>CLEAR PRICING</h3><p>We provide cost breakdown of repairs online so you know in advance how much a repair will cost you.&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516734473-46 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491516734473-46">
+                <div id="id_1491938749613_885"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491938749613_885);
+                      // animate this element at start
+                      animate_1491938749613_885();
+                      // the function to start the animation
+                      function animate_1491938749613_885 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491938749613_885').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'bottom',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style text-element silex-id-1491515363980-28 content card" data-silex-id="silex-id-1491515363980-28" style="">
+                    <div class="silex-element-content normal">
+                        <h3>FAST</h3><p>Get back on the road fast. We will call you on arrival at your scheduled appointment time. Repair will take less than 45 minutes. Contrast this on an average repair time of 3 days at a static bike shop.</p><p>&nbsp;</p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516774225-47 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491516774225-47">
+                <div id="id_1491938735813_375"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491938735813_375);
+                      // animate this element at start
+                      animate_1491938735813_375();
+                      // the function to start the animation
+                      function animate_1491938735813_375 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491938735813_375').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'right',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style text-element silex-id-1491515366556-29 content card" data-silex-id="silex-id-1491515366556-29" style="">
+                    <div class="silex-element-content normal">
+                        <h3>FAIR</h3>
+                        <p>Improving lives is a priority for us. We provide a professional and friendly mobile bicycle repairs for a similar price to static bike shops (excluding travel cost).</p><p><br></p>
+                        
+                    </div>
+                </div>
+            </div>
+            <div data-silex-type="container-element" class="editable-style silex-id-1491516807859-48 container-element silex-component silex-component-animated-container" data-silex-id="silex-id-1491516807859-48">
+                <div id="id_1491938718641_502"></div>
+                <script type="text/javascript">
+                    /*
+                    animation widget from here: https://github.com/silexlabs/Silex/issues/443
+                    */
+                    $(function() {
+                      var bodyEl = $('body');
+                      // execute only outside silex editor
+                      if(!bodyEl.hasClass('silex-runtime')) return;
+                      // init ScrollReveal lib
+                      window.sr = window.sr || ScrollReveal();
+                      // animate this element on page change
+                      bodyEl.on('pageChanged', animate_1491938718641_502);
+                      // animate this element at start
+                      animate_1491938718641_502();
+                      // the function to start the animation
+                      function animate_1491938718641_502 (event, pageName) {
+                        // get the silex element in which we are
+                        var silexElement = $('#id_1491938718641_502').parent();
+                        if(// only if the element is in the dom
+                          silexElement &&
+                          // and is visible in the current page
+                          (silexElement.hasClass(bodyEl.pageable('option').currentPage) ||
+                          // or visible in all pages
+                          !silexElement.hasClass('paged-element')) &&
+                          // but never in mobile mode
+                          (!bodyEl.hasClass('enable-mobile') || $(window).width() >= 480)) {
+                          // use ScrollReveal API
+                          sr.reveal(silexElement, {
+                            origin:  'bottom',
+                            distance: '20px',
+                            duration: 500,
+                            delay: 0,
+                            rotate: { x: 0, y: 0, z: 0 },
+                            opacity: 0,
+                            scale: 1,
+                            easing: 'linear',
+                            reset: false,
+                            beforeReveal: function(el){
+                              
+                            },
+                            beforeReset: function(el){
+                              
+                            },
+                            afterReveal: function(el){
+                              
+                            },
+                            afterReset: function(el){
+                              
+                            }
+                          });
+                        }
+                      }
+                    })
+                </script>
+                <div data-silex-type="text-element" class="editable-style text-element silex-id-1491515375587-30 content card" data-silex-id="silex-id-1491515375587-30" style="">
+                    <div class="silex-element-content normal">
+                        <h3>CONVENIENT</h3><p>No need to stress about whether there is a local bike shop that will be open at times that fit with your work schedule.&nbsp;</p><p><br></p><p><br></p>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        <div data-silex-type="text-element" class="editable-style text-element silex-id-1589102309866-10" data-silex-id="silex-id-1589102309866-10" style=""><div class="silex-element-content normal"> <p><a href="https://fsymbols.com/copyright/">©</a>&nbsp;fahrradfixi.de, 2020</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div></div>
+        
+    </div>
+
+
+
+
+    <div data-silex-type="container-element" class="prevent-draggable container-element editable-style silex-id-1491511864480-12 section-element prevent-resizable page-about-us- paged-element page-prices page-order" data-silex-id="silex-id-1491511864480-12">
+        
+    </div><div data-silex-type="container-element" class="prevent-draggable container-element editable-style silex-id-1491515759410-36 section-element prevent-resizable page-about-us- paged-element page-prices page-order page-feedback page-order-placed contact" data-silex-id="silex-id-1491515759410-36"><div data-silex-type="html-element" class="editable-style html-element silex-id-1545826982194-4" data-silex-id="silex-id-1545826982194-4" style=""><div class="silex-element-content"><p id="contact"></p></div></div>
+        <div data-silex-type="container-element" class="editable-style silex-id-1491515759409-35 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1491515759409-35" style="">
+
+            
+            
+        <div data-silex-type="html-element" class="editable-style silex-id-1588590290909-6 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height page-order paged-element" data-silex-id="silex-id-1588590290909-6" style=""><div class="silex-element-content"><form id="id_1589104315647_530" action="https://formspree.io/radrepman@gmail.com" method="POST">
+  
+  <div>
+    <label for="field1">Name</label>
+    <input type="text" required="" id="field1" name="field1" placeholder="Your name">
+  </div>
+  
+  
+  <div>
+    <label for="field2">Mobile Phone Number</label>
+    <input type="text" required="" id="field2" name="field2" placeholder="Phone number with extension">
+  </div>
+  
+  
+  <div class="fill-vertical">
+    <label for="field3">Your Order Details</label>
+    <textarea required="" id="field3" name="field3" placeholder="Please include all details listed "></textarea>
+  </div>
+  
+  <input type="submit" value="Place Order">
+</form>
+<style>#id_1589104315647_530 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1589104315647_530 input[type=submit] {width: 100%; background-color: #4CAF50; color: #FFFFFF; padding: 14px 20px; margin: 8px 0; border: 1px solid #4CAF50; border-radius: 3px; cursor: pointer;}#id_1589104315647_530 label {color: #b98a68;}#id_1589104315647_530 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1589104315647_530 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1589104315647_530 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+
+</div></div><div data-silex-type="text-element" class="editable-style silex-id-1588590854384-7 text-element page-order paged-element" data-silex-id="silex-id-1588590854384-7" style=""><div class="silex-element-content normal"><p><b>We provide small bicycle repairs and servicing at the customers location</b>&nbsp;</p><p>We currently can not support repair of: disc brakes, bikes with internal gears/brakes. If you need these, we advise you to take your bike to a repair workshop.&nbsp;</p><p><b>Please use the form provided to place your order</b>.</p><p>&nbsp;In "Your Order Details" please include the following information:&nbsp;&nbsp;</p><p></p><ol><li><b>Your full address</b>, including name on bell</li><li><b>Desired time</b> (or availability) of appointment&nbsp;</li><li><b>Repairs needed</b></li><li><b>Size of your wheels</b>- this is normally written on the side of your tires and is usually in the format&nbsp;<ol><li>28×1.25&nbsp;&nbsp;</li><li>26×2.0&nbsp;</li><li>700x25c</li></ol></li></ol><p></p><p><br></p><p>&nbsp;</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style silex-id-1589020834702-1 text-element paged-element page-prices" data-silex-id="silex-id-1589020834702-1" style=""><div class="silex-element-content normal"><a href="https://www.radambulanz.de/preise.html#fehleranalyse"></a><p>We fix or replace wheels/tires, gearshift and drive, brakes, lights, handlebars and saddles.
+
+We also conduct general servicing and cleaning.</p><p>The price for a home visit is 
+
+€45, which includes changing a cable, brake blocks or changing an inner-tube. In addition, we also include a full service including: brakes and gear adjustment, pumping up tires and oiling your chain.&nbsp;</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="html-element" class="editable-style silex-id-1589021823956-2 html-element silex-component silex-component-form silex-use-height-not-minheight silex-element-content-full-height page-feedback paged-element" data-silex-id="silex-id-1589021823956-2" style=""><div class="silex-element-content"><form id="id_1589101113296_252" action="https://formspree.io/radrepman@gmail.com" method="POST">
+  
+  <div>
+    <label for="field1">Name</label>
+    <input type="text" required="" id="field1" name="field1" placeholder="Your name">
+  </div>
+  
+  
+  <div>
+    <label for="field2">Your email adress</label>
+    <input type="text" required="" id="field2" name="field2" placeholder="your@email.com">
+  </div>
+  
+  
+  <div class="fill-vertical">
+    <label for="field3">Your feedback</label>
+    <textarea required="" id="field3" name="field3" placeholder="What you have to say"></textarea>
+  </div>
+  
+  <input type="submit" value="Send">
+</form>
+<style>#id_1589101113296_252 input[type=text], select {width: 100%; padding: 12px 20px; margin: 8px 0; display: inline-block; border: 1px solid #ccc; border-radius: 3px; box-sizing: border-box;}#id_1589101113296_252 input[type=submit] {width: 100%; background-color: #4CAF50; color: #FFFFFF; padding: 14px 20px; margin: 8px 0; border: 1px solid #4CAF50; border-radius: 3px; cursor: pointer;}#id_1589101113296_252 label {color: #b08b82;}#id_1589101113296_252 .fill-vertical {flex: 1 1 auto; display: flex; flex-direction: column;}#id_1589101113296_252 .fill-vertical textarea {flex: 1 1 auto; width: 100%; height: 150px; padding: 12px 20px; box-sizing: border-box; border: 2px solid #ccc; border-radius: 3px; background-color: #f8f8f8; font-size: 16px; resize: none;}#id_1589101113296_252 {border-radius: 3px; display: flex; flex-direction: column; justify-content: space-between; height: 100%;}</style>
+
+</div></div><div data-silex-type="text-element" class="editable-style silex-id-1589021929651-3 text-element page-feedback paged-element" data-silex-id="silex-id-1589021929651-3" style=""><div class="silex-element-content normal"><p>Please use the adjacent form to provide any feedback on the bike repair service or the website, whether constructive criticism or positive review.&nbsp;</p><p><br></p><p>We highly value your thoughts and feelings and will strive to incorporate them in the future development of our service.&nbsp;</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style silex-id-1589024080307-4 text-element page-about-us- paged-element" data-silex-id="silex-id-1589024080307-4" style=""><div class="silex-element-content normal"><p>Gavriel Vinegrad started his facebook page and mobile bicycle business in 2019 in order to pursue his twin passions of urban cycling and fixing bikes. It soon became clear that expanding his one man business would be necessary to meet the increasing demand for home bicycle repair in Berlin. As such, fahrradfixi.de was developed by Josh Frost as a digital platform to provide a one stop shop for centralised customer information and ordering.&nbsp;</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style silex-id-1589099920727-6 text-element page-about-us- paged-element" data-silex-id="silex-id-1589099920727-6" style=""><div class="silex-element-content normal"><p><b><u>ABOUT US</u></b></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1589100086123-7 page-prices paged-element" data-silex-id="silex-id-1589100086123-7" style=""><div class="silex-element-content normal"><p><b><u>PRICING</u></b></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1589100132276-8 page-order paged-element" data-silex-id="silex-id-1589100132276-8" style=""><div class="silex-element-content normal"><p><b><u>PLACE YOUR ORDER</u></b></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style text-element silex-id-1589101138505-9 page-feedback paged-element" data-silex-id="silex-id-1589101138505-9" style=""><div class="silex-element-content normal"><p><b><u>SUBMIT FEEDBACK</u></b></p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style silex-id-1588588935701-2 text-element" data-silex-id="silex-id-1588588935701-2" style=""><div class="silex-element-content normal"> <p><a href="https://fsymbols.com/copyright/">©</a>&nbsp;fahrradfixi.de, 2020</p><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div><div data-silex-type="text-element" class="editable-style silex-id-1589103685792-11 text-element page-order-placed paged-element" data-silex-id="silex-id-1589103685792-11" style=""><div class="silex-element-content normal"><h2>ORDER COMPLETE</h2><h2> </h2><h2>🚲</h2><span class="_wysihtml-temp-caret-fix" style="position: absolute; display: block; min-width: 1px; z-index: 99999;">﻿</span></div></div></div>
+    </div>
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+
+
+
+
+<div data-silex-type="container-element" class="prevent-draggable prevent-resizable container-element editable-style silex-id-1588589466255-5 section-element page-home paged-element" data-silex-id="silex-id-1588589466255-5"><div data-silex-type="container-element" class="editable-style silex-id-1588589466142-4 container-element silex-element-content silex-container-content website-width prevent-draggable" data-silex-id="silex-id-1588589466142-4"></div></div></body></html>
